@@ -1,0 +1,493 @@
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{height:100%;width:100%;font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a,a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
+/*
+    RESET
+*/
+* {
+ padding: 0;
+ margin: 0;
+ border: 0;
+}
+
+*, *:before, *:after {
+ box-sizing: border-box;
+}
+
+:focus, :active {
+ outline: none;
+}
+
+a:focus, a:active {
+ outline: none;
+}
+
+nav, footer, header, aside {
+ display: block;
+}
+
+html, body {
+ height: 100%;
+ width: 100%;
+ font-size: 100%;
+ line-height: 1;
+ font-size: 14px;
+ -ms-text-size-adjust: 100%;
+ -moz-text-size-adjust: 100%;
+ -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+ font-family: inherit;
+}
+
+textarea {
+ resize: vertical;
+ min-height: 150px;
+}
+
+input::-ms-clear {
+ display: none;
+}
+
+button {
+ cursor: pointer;
+ background-color: transparent;
+}
+
+button::-moz-focus-inner {
+ padding: 0;
+ border: 0;
+}
+
+a {
+ text-decoration: none;
+}
+a:visited {
+ color: inherit;
+}
+
+a:hover {
+ text-decoration: none;
+}
+
+ul li {
+ list-style: none;
+}
+
+img {
+ vertical-align: top;
+ max-width: 100%;
+ height: auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+ font-size: inherit;
+ font-weight: 700;
+}
+
+input::-webkit-input-placeholder {
+ opacity: 1;
+ -webkit-transition: opacity 0.3s ease;
+ transition: opacity 0.3s ease;
+}
+
+input::-moz-placeholder {
+ opacity: 1;
+ -moz-transition: opacity 0.3s ease;
+ transition: opacity 0.3s ease;
+}
+
+input:-moz-placeholder {
+ opacity: 1;
+ -moz-transition: opacity 0.3s ease;
+ transition: opacity 0.3s ease;
+}
+
+input:-ms-input-placeholder {
+ opacity: 1;
+ -ms-transition: opacity 0.3s ease;
+ transition: opacity 0.3s ease;
+}
+
+input:focus::-webkit-input-placeholder {
+ opacity: 0;
+ -webkit-transition: opacity 0.3s ease;
+ transition: opacity 0.3s ease;
+}
+
+input:focus::-moz-placeholder {
+ opacity: 0;
+ -moz-transition: opacity 0.3s ease;
+ transition: opacity 0.3s ease;
+}
+
+input:focus:-moz-placeholder {
+ opacity: 0;
+ -moz-transition: opacity 0.3s ease;
+ transition: opacity 0.3s ease;
+}
+
+input:focus:-ms-input-placeholder {
+ opacity: 0;
+ -ms-transition: opacity 0.3s ease;
+ transition: opacity 0.3s ease;
+}
+
+textarea::-webkit-input-placeholder {
+ opacity: 1;
+ -webkit-transition: opacity 0.3s ease;
+ transition: opacity 0.3s ease;
+}
+
+textarea::-moz-placeholder {
+ opacity: 1;
+ -moz-transition: opacity 0.3s ease;
+ transition: opacity 0.3s ease;
+}
+
+textarea:-moz-placeholder {
+ opacity: 1;
+ -moz-transition: opacity 0.3s ease;
+ transition: opacity 0.3s ease;
+}
+
+textarea:-ms-input-placeholder {
+ opacity: 1;
+ -ms-transition: opacity 0.3s ease;
+ transition: opacity 0.3s ease;
+}
+
+textarea:focus::-webkit-input-placeholder {
+ opacity: 0;
+ -webkit-transition: opacity 0.3s ease;
+ transition: opacity 0.3s ease;
+}
+
+textarea:focus::-moz-placeholder {
+ opacity: 0;
+ -moz-transition: opacity 0.3s ease;
+ transition: opacity 0.3s ease;
+}
+
+textarea:focus:-moz-placeholder {
+ opacity: 0;
+ -moz-transition: opacity 0.3s ease;
+ transition: opacity 0.3s ease;
+}
+
+textarea:focus:-ms-input-placeholder {
+ opacity: 0;
+ -ms-transition: opacity 0.3s ease;
+ transition: opacity 0.3s ease;
+}
+
+textarea {
+ font-family: inherit;
+ resize: none;
+}
+p {
+   margin: 0;
+}
+ dl, ol, ul {
+     margin-top: 0;
+     margin-bottom: 0rem; 
+ }
+
+ ol, ul {
+     padding-left: 0rem; 
+ }
+ @font-face {
+    font-family: "MONTSERRAT-EXTRABOLD";
+    src: url("../fonts/MONTSERRAT-EXTRABOLD.woff") format("woff");
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+ @font-face {
+    font-family: "MONTSERRAT-MEDIUM";
+    src: url("../fonts/MONTSERRAT-MEDIUM.woff") format("woff");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+/* ----------------------------- */
+
+body {
+    font-family: "MONTSERRAT-MEDIUM";
+   margin: 0;
+}
+.container {
+   max-width: 1140px;
+   margin: 0 auto;
+}
+.header {
+   background: url('../img/city.jpg') no-repeat;
+   background-size: cover;
+   text-align: center;
+}
+.header__logo{
+  display: flex;
+  align-items: center;
+  padding: 75px 0 202px 0;
+  justify-content: center;
+}
+.header__logo img{
+  width: 23px;
+  height: 23px;
+  background: #000;
+  border-radius: 50%;
+}
+.header__logo p {
+  font-family: "MONTSERRAT-EXTRABOLD";
+  color: #000;
+  font-size: 22px;
+}
+.header__text {
+}
+.header__city {
+  font-family: "MONTSERRAT-EXTRABOLD";
+  display: block;
+  font-size: 15px;
+  text-transform: uppercase;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 50px;
+  max-width:335px;
+  padding: 10px;
+}
+.header__city:hover{
+  background: #000;
+  color: #fff;
+  transition: 0.5s ease;
+}
+.header__title-style {
+  font-size: 60px;
+  font-family: "MONTSERRAT-EXTRABOLD";
+  color: #fff;
+  text-transform: uppercase;
+  padding: 42px 0;
+}
+.header__title-style span{
+  color: #000;
+}
+.header__title-style:hover{
+  color: #000;
+}
+.header__title span:hover{
+  color: #fff;
+}
+.header__subtitle{
+  padding: 0 0 35px 0;
+}
+.header__subtitle-style{
+  max-width: 500px;
+  margin: 0 auto;
+  background: #fff;
+  color: #000;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+.header__subtitle span {
+  color: #fff;
+  background: #000;
+}
+.header__button{
+  padding: 0 0 50px 0;
+}
+.header__button a{
+  font-family: "MONTSERRAT-EXTRABOLD";
+  background: #000;
+  border-radius: 50px;
+  font-size: 22px;
+  color: #fff;
+  padding: 7px 15px;
+}
+.header__button a:hover{
+  background: #fff;
+  transition: 0.5s ease;
+  color: #000;
+}
+.route {
+  background: #1c1c1c;
+}
+
+.route__title {
+  font-size: 30px;
+  font-family: "MONTSERRAT-EXTRABOLD";
+  text-transform: uppercase;
+  color: #fff;
+  opacity: 0.8;
+  padding: 164px 0 105px 0;
+  text-align: center;
+}
+.route__content {
+  display: flex;
+  align-items: center;
+}
+.route__text{
+  color: #fff;
+  background: ;
+  padding: 0 70px 0 75px;
+}
+.route__back {
+  background: #000;
+  border-radius: 45px;
+  box-shadow: 2px 5px 16px 0px #0B325E, inset -1px 3px 8px 5px #1F87FF;
+}
+.route__text-suptitle {
+  font-size: 15px;
+  opacity: 0.6;
+  text-transform: uppercase;
+}
+.route__text-title {
+  font-size: 24px;
+  font-family: "MONTSERRAT-EXTRABOLD";
+  padding: 25px 0 45px 0;
+  opacity: 0.8;
+}
+.route__text-subtitle p{
+  margin: 15px 0 0 0;
+  opacity: 0.7;
+  font-size: 15px;
+}
+.route__arrow-block{
+  padding: 25px 0;
+}
+.route__arrow{
+  transition: 0.3s ease;
+}
+.route__arrow:hover{
+  padding: 0 0 0 25px;
+  transition: 0.3s ease;
+}
+.route__image img{
+  max-width: 479px;
+  max-height: 649px;
+  border-radius: 0 45px 45px 0;
+}
+.route__btn{
+  padding: 90px 0 60px 0;
+}
+.route__routes{
+  font-size: 16px;
+  display: block;
+  width: 265px;
+  margin: 0 auto;
+  font-family: "MONTSERRAT-EXTRABOLD";
+  border: 2px solid #23CF7D;
+  border-radius: 70px;
+  background: #23CF7D;
+  transition: 0.2s linear;
+  padding: 10px 20px;
+  box-shadow: 0px 0px 19px 13px rgba(87,255,140,0.36);
+}
+.route__routes:hover{
+  background: #1c1c1c;
+  transition: 0.5s ease;
+  color: #fff;
+}
+.opportunities {
+  background: #1c1c1c;
+  color: #fff;
+}
+.opportunities__card{
+
+}
+.opportunities__title {}
+.route__title {}
+.opportunities__items{
+  justify-content:flex-end;
+}
+.opportunities__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;;
+  background: #000;
+  width: 1270px;
+  box-shadow: 2px 5px 16px 0px #0B325E, inset -1px 3px 8px 5px #1F87FF;
+  border-radius: 45px;
+}
+.opportunities__text {
+  max-width: 700px;
+  padding: 0 0 0 50px;
+}
+.opportunities__suptitle {
+  opacity: 0.7;
+  font-size: 20px;
+
+}
+.opportunities__list{
+  margin: 45px 0;
+  max-width: 650px;
+}
+.opportunities__list p{
+  margin: 45px 15px;
+  opacity: 0.8;
+  position: relative;
+}
+.first:before{
+  content: '';
+  height: 5px;
+  width: 100px;
+  position: absolute;
+  background-color: #1F87FF;
+  bottom: 25px;
+  left: 0;
+  border-radius: 15px;
+}
+.second:before{
+  content: '';
+  height: 5px;
+  width: 100px;
+  position: absolute;
+  background-color: #1F87FF;
+  bottom: 35px;
+  left: 0;
+  border-radius: 15px;
+}
+.third:before{
+  content: '';
+  height: 5px;
+  width: 100px;
+  position: absolute;
+  background-color: #1F87FF;
+  bottom: 25px;
+  left: 0;
+  border-radius: 15px;
+}
+.fourth:before{
+  content: '';
+  height: 5px;
+  width: 100px;
+  position: absolute;
+  background-color: #1F87FF;
+  bottom: 65px;
+  left: 0;
+  border-radius: 15px;
+}
+.opportunities__image img{
+  max-width: 787px;
+  max-height: 626px;
+}
+.footer{
+  background: #1c1c1c;
+}
+.footer__copyright{
+  max-width: 600px;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 100px 40px;
+  opacity: 0.9;
+}
